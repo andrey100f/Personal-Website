@@ -1,11 +1,8 @@
-const hamburgerButton = document.getElementById('hamburgercontactForm');
 const navList = document.getElementById('nav-list');
 
 function toggleButton() {
     navList.classList.toggle('show');
 }
-
-hamburgerButton.addEventListener('click', toggleButton);
 
 // const form = document.querySelector('#contactForm');
 
