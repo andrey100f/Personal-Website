@@ -1,4 +1,4 @@
-const hamburgerButton = document.getElementById('hamburger');
+const hamburgerButton = document.getElementById('hamburgercontactForm');
 const navList = document.getElementById('nav-list');
 
 function toggleButton() {
@@ -7,21 +7,30 @@ function toggleButton() {
 
 hamburgerButton.addEventListener('click', toggleButton);
 
-function sendMessage() {
-    var serviceId = "service_hywezml";
-    var templateId = "template_ccr6gic";
+// const form = document.querySelector('#contactForm');
 
-    var params = {
-        senderName: document.querySelector('#name').value,
-        senderEmail: document.querySelector('#email').value,
-        comment: document.querySelector('#comment').value
-    };
+// form.addEventListener('submit', (e) => {
+//     const captchaResponse = grecaptcha.getResponse();
+//     console.log(captchaResponse);
 
-    emailjs.send(serviceId, templateId, params)
-        .then(res => {
-            alert('Your message has been sent!!');
-        })
-        .catch((error) => {
-            console.log(error);
-        });
-}
+//     if (!captchaResponse.length > 0) {
+//         throw new Error("Captcha not complete!!");
+//     }
+
+//     var serviceId = "service_hywezml";
+//     var templateId = "template_ccr6gic";
+
+//     var params = {
+//         senderName: document.querySelector('#name').value,
+//         senderEmail: document.querySelector('#email').value,
+//         comment: document.querySelector('#comment').value
+//     };
+
+//     emailjs.send(serviceId, templateId, params)
+//         .then(res => {
+//             alert('Your message has been sent!!');
+//         })
+//         .catch((error) => {
+//             console.log(error);
+//         });
+// })
