@@ -19,8 +19,9 @@ form.addEventListener('submit', (e) => {
     const captchaResponse = grecaptcha.getResponse();
     console.log(captchaResponse);
 
-    if (!captchaResponse.length > 0) {
-        throw new Error("Captcha not complete!!");
+    if (captchaResponse.length == 0) {
+        e.preventDefault();
+        alert("Please check the recaptcha");
     }
 
     var serviceId = "service_hywezml";
