@@ -8,16 +8,8 @@ const form = document.querySelector('#contactForm');
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
-    const senderName = document.querySelector('#name').value;
-    const senderEmail = document.querySelector('#email').value;
-    const comment = document.querySelector('#comment').value;
-
-    console.log(senderName);
-    console.log(senderEmail);
-    console.log(comment);
 
     const captchaResponse = grecaptcha.getResponse();
-    console.log(captchaResponse);
 
     if (captchaResponse.length == 0) {
         e.preventDefault();
