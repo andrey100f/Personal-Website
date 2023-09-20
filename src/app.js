@@ -7,6 +7,7 @@ function toggleButton() {
 const form = document.querySelector('#contactForm');
 
 form.addEventListener('submit', (e) => {
+    e.preventDefault();
     const captchaResponse = grecaptcha.getResponse();
     console.log(captchaResponse);
 
