@@ -30,7 +30,8 @@ form.addEventListener('submit', (e) => {
     var params = {
         senderName: document.querySelector('#name').value,
         senderEmail: document.querySelector('#email').value,
-        comment: document.querySelector('#comment').value
+        comment: document.querySelector('#comment').value,
+        'g-recaptcha-response': captchaResponse
     };
 
     emailjs.send(serviceId, templateId, params)
