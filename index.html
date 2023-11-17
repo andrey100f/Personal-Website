@@ -1,178 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="icon" href="src/images/logo.png" />
 
-    <link rel="stylesheet" href="src/styles.css">
-    <link rel="icon" href="src/images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/1a473c2b75.js"
+      crossorigin="anonymous"
+    ></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap"
-        rel="stylesheet">
-    <script src="https://kit.fontawesome.com/1a473c2b75.js" crossorigin="anonymous"></script>
-
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-    </script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
     <script type="text/javascript">
-        (function () {
-            emailjs.init("j2Pil8sFrvElt9VGa");
-        })();
+      (function () {
+        emailjs.init("j2Pil8sFrvElt9VGa");
+      })();
     </script>
 
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
     <title>Forminte Andrei</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <section class="hero">
-        <nav>
-            <img class="logo" src="src/images/logo.png" alt="Andrei Forminte's logo">
-            <ul id="nav-list">
-                <li>
-                    <a href="#about-me">About me</a>
-                </li>
+      <nav>
+        <img
+          class="logo"
+          src="src/images/logo.png"
+          alt="Andrei Forminte's logo"
+        />
+        <ul id="nav-list">
+          <li>
+            <a href="#about-me">About me</a>
+          </li>
 
-                <li>
-                    <a href="#projects">Projects</a>
-                </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
 
-                <li>
-                    <a href="#contact-me">Contact</a>
-                </li>
-            </ul>
+          <li>
+            <a href="#contact-me">Contact</a>
+          </li>
+        </ul>
 
-            <button class="hamburger" id="hamburger">
-                <i class="fas fa-bars"></i>
-            </button>
-        </nav>
+        <button class="hamburger" id="hamburger">
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
 
-        <div class="hero-area">
-            <div class="hero-text">
-                <h1>Forminte Andrei</h1>
-                <p>Software Development Enthusiast</p>
+      <div class="hero-area">
+        <div class="hero-text">
+          <h1>Forminte Andrei</h1>
+          <p>Software Development Enthusiast</p>
 
-                <div class="button">
-                    <a href="#about-me">About me</a>
-                </div>
-            </div>
-
-            <div class="socials">
-                <div>
-                    <a href="https://github.com/andrey100f" class="social">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" width="50" height="50"
-                            viewBox="0 0 24 24">
-                            <path
-                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                        </svg>
-                    </a>
-                </div>
-
-                <div>
-                    <a href="https://www.linkedin.com/in/andrei-forminte" class="social">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" width="50" height="50"
-                            viewBox="0 0 24 24">
-                            <path
-                                d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
-                        </svg>
-                    </a>
-                </div>
-            </div>
+          <div class="button">
+            <a href="#about-me">About me</a>
+          </div>
         </div>
+
+        <div class="socials">
+          <div>
+            <a href="https://github.com/andrey100f" class="social">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#ffffff"
+                width="50"
+                height="50"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                />
+              </svg>
+            </a>
+          </div>
+
+          <div>
+            <a
+              href="https://www.linkedin.com/in/andrei-forminte"
+              class="social"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#ffffff"
+                width="50"
+                height="50"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="sub-section" id="about-me">
-        <div class="information">
-            <h2>About Me</h2>
-            <p>I am an individual driven by curiosity and a strong commitment to continuous learning and personal
-                development. My primary area of expertise centers around software development, where I employ my skills
-                to conceive and execute innovative projects with a substantial impact. My particular focus lies in the
-                realms of web and mobile application development, and I am enthusiastic about further exploring these
-                domains to ascertain the exciting possibilities they may offer in my ongoing journey.</p>
-        </div>
+      <div class="information">
+        <h2>About Me</h2>
+        <p>
+          I am an individual driven by curiosity and a strong commitment to
+          continuous learning and personal development. My primary area of
+          expertise centers around software development, where I employ my
+          skills to conceive and execute innovative projects with a substantial
+          impact. My particular focus lies in the realms of web and mobile
+          application development, and I am enthusiastic about further exploring
+          these domains to ascertain the exciting possibilities they may offer
+          in my ongoing journey.
+        </p>
+      </div>
 
-        <div class="headshot-container">
-            <img class="headshot" src="src/images/headshot.jpg" alt="Andrei Forminte headshot">
-        </div>
+      <div class="headshot-container">
+        <img
+          class="headshot"
+          src="src/images/headshot.jpg"
+          alt="Andrei Forminte headshot"
+        />
+      </div>
     </section>
 
     <section class="sub-section-alternative" id="projects">
-        <h2>Projects</h2>
-        <div class="project-container">
-            <div class="project-card">
-                <img class="project-image" src="src/images/project.png" alt="Project One Image">
-                <h3>TMS Android App</h3>
-                <p class="subtext">The TMS-App is an Android application with a Java backend, allowing users to easily
-                    discover and buy tickets for various events. It provides a seamless experience for event management
-                    and ticket transactions, ensuring user-friendliness and intuitiveness.</p>
-                <hr>
-                <p class="subtext"><a class="project-link" href="https://github.com/andrey100f/TMS-Android-App">View
-                        here</a></p>
-            </div>
-
-            <div class="project-card">
-                <img class="project-image" src="src/images/project.png" alt="Project Two Image">
-                <h3>Java Video Call App</h3>
-                <p class="subtext">Video Call Application is a robust project crafted with a Spring Boot backend and a
-                    responsive JavaScript frontend. It leverages the power of the Segocloud API for flawless call
-                    functionality.</p>
-                <hr>
-                <p class="subtext"><a class="project-link" href="https://github.com/andrey100f/Video-Call-App">View
-                        here</a></p>
-            </div>
-
-            <div class="project-card">
-                <img class="project-image" src="src/images/project.png" alt="Project One Image">
-                <h3>TMS Web App</h3>
-                <p class="subtext">The TMS-App is an web application with a Node.js backend, allowing users to easily
-                    discover and buy tickets for various events. It provides a seamless experience for event management
-                    and ticket transactions, ensuring user-friendliness and intuitiveness.</p>
-                <hr>
-                <p class="subtext"><a class="project-link" href="https://github.com/andrey100f/TMS-Web-App">View
-                        here</a></p>
-            </div>
-
-            <div class="project-card">
-                <img class="project-image" src="src/images/project.png" alt="Project Four Image">
-                <h3>Android News App</h3>
-                <p class="subtext">This project is beginner-friendly News App written in Java. The app utilizes
-                    newsapi.org for latest articles, with intuitive browsing. Retrofit for API calls and Picasso for
-                    image efficiency.</p>
-                <hr>
-                <p class="subtext"><a class="project-link" href="https://github.com/andrey100f/Android-News-App">View
-                        here</a></p>
-            </div>
-
-            <div class="project-card">
-                <img class="project-image" src="src/images/project.png" alt="Project Four Image">
-                <h3>JavaScript Notifications App</h3>
-                <p class="subtext">
-                    This application, developed with React and Socket.io, delivers real-time notifications and instant
-                    updates. The implementation showcases the power of React components and Socket.io's event-driven
-                    architecture for efficient real-time communication.</p>
-                <hr>
-                <p class="subtext"><a class="project-link" href="https://github.com/andrey100f/Notifications-App">View
-                        here</a></p>
-            </div>
+      <h2>Projects</h2>
+      <div class="project-container">
+        <div class="project-card">
+          <img
+            class="project-image"
+            src="src/images/project.png"
+            alt="Project One Image"
+          />
+          <h3>TMS Android App</h3>
+          <p class="subtext">
+            The TMS-App is an Android application with a Java backend, allowing
+            users to easily discover and buy tickets for various events. It
+            provides a seamless experience for event management and ticket
+            transactions, ensuring user-friendliness and intuitiveness.
+          </p>
+          <hr />
+          <p class="subtext">
+            <a
+              class="project-link"
+              href="https://github.com/andrey100f/TMS-Android-App"
+              >View here</a
+            >
+          </p>
         </div>
+
+        <div class="project-card">
+          <img
+            class="project-image"
+            src="src/images/project.png"
+            alt="Project Four Image"
+          />
+          <h3>Android News App</h3>
+          <p class="subtext">
+            This project is beginner-friendly News App written in Java. The app
+            utilizes newsapi.org for latest articles, with intuitive browsing.
+            Retrofit for API calls and Picasso for image efficiency.
+          </p>
+          <hr />
+          <p class="subtext">
+            <a
+              class="project-link"
+              href="https://github.com/andrey100f/Android-News-App"
+              >View here</a
+            >
+          </p>
+        </div>
+
+        <div class="project-card">
+          <img
+            class="project-image"
+            src="src/images/project.png"
+            alt="Project One Image"
+          />
+          <h3>TMS Web App</h3>
+          <p class="subtext">
+            The TMS-App is an web application with a Node.js backend, allowing
+            users to easily discover and buy tickets for various events. It
+            provides a seamless experience for event management and ticket
+            transactions, ensuring user-friendliness and intuitiveness.
+          </p>
+          <hr />
+          <p class="subtext">
+            <a
+              class="project-link"
+              href="https://github.com/andrey100f/TMS-Web-App"
+              >View here</a
+            >
+          </p>
+        </div>
+
+        <div class="project-card">
+          <img
+            class="project-image"
+            src="src/images/project.png"
+            alt="Project Four Image"
+          />
+          <h3>JavaScript Notifications App</h3>
+          <p class="subtext">
+            This application, developed with React and Socket.io, delivers
+            real-time notifications and instant updates. The implementation
+            showcases the power of React components and Socket.io's event-driven
+            architecture for efficient real-time communication.
+          </p>
+          <hr />
+          <p class="subtext">
+            <a
+              class="project-link"
+              href="https://github.com/andrey100f/Notifications-App"
+              >View here</a
+            >
+          </p>
+        </div>
+      </div>
     </section>
 
     <footer id="contact-me">
-        <h2>Contact me</h2>
-        <form id="contactForm">
-            <input id="name" type="text" class="feedback-input" placeholder="Name" required />
-            <input id="email" type="email" class="feedback-input" placeholder="Email" required />
-            <textarea id="comment" class="feedback-input" placeholder="Comment" required></textarea>
-            <div class="g-recaptcha" data-sitekey="6Ld6cDooAAAAABFUD1rUokRX6iOeJS5C1ig8FaI7"></div>
-            <br>
-            <input id="submitButton" type="submit" value="Submit">
-        </form>
+      <h2>Contact me</h2>
+      <form id="contactForm">
+        <input
+          id="name"
+          type="text"
+          class="feedback-input"
+          placeholder="Name"
+          required
+        />
+        <input
+          id="email"
+          type="email"
+          class="feedback-input"
+          placeholder="Email"
+          required
+        />
+        <textarea
+          id="comment"
+          class="feedback-input"
+          placeholder="Comment"
+          required
+        ></textarea>
+        <div
+          class="g-recaptcha"
+          data-sitekey="6Ld6cDooAAAAABFUD1rUokRX6iOeJS5C1ig8FaI7"
+        ></div>
+        <br />
+        <input id="submitButton" type="submit" value="Submit" />
+      </form>
     </footer>
 
     <script src="src/app.js"></script>
-</body>
-
+  </body>
 </html>
